@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Website</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+    <!-- Begin Navigation -->
+    <!-- Small Navigation -->
+    <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+      <a class="logo-small show-for-small-only" href="#"><img src="http://placehold.it/50x50?text=LOGO" /></a>
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <!-- Medium-Up Navigation -->
+    <nav class="top-bar" id="nav-menu">
+
+      <div class="logo-wrapper hide-for-small-only">
+        <div class="logo">
+          <img src="http://placehold.it/350x150?text=LOGO">
+        </div>
+      </div>
+
+      <!-- Left Nav Section -->
+      <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu">
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Nav Section -->
+      <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+          <li class="has-submenu">
+            <a href="#">Menu 4</a>
+            <ul class="submenu menu vertical medium-horizontal" data-submenu>
+              <li><a href="#">First link in dropdown</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Menu 5</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">First link in dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Begin Hero-->
+    <div class="row collapse expanded">
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            <li class="is-active orbit-slide">
+              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+              <span class="orbit-caption"><p>Welcome</p></span>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+              <span class="orbit-caption"><p>Learn more</p></span>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+              <span class="orbit-caption"><p>contact us</p></span>
+            </li>
+          </ul>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Hero -->
+
+    <!-- Begin Content -->
+    <div class="row">
+      <div class="small-4 columns">
+
+        <div class="image-wrapper overlay-fade-in">
+
+          <img src="data:image/png;base64,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" />
+
+          <div class="image-overlay-content">
+            <h2>Buy it Now!</h2>
+            <p class="price">$39.99</p>
+            <a href="#" class="button">Get it</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="small-4 columns">
+
+        <div class="image-wrapper overlay-slide-in-left">
+
+          <img src="http://www.uft.org/files/imagecache/photo_gallery/photo/pres-school-visit-richmond-hill-3.jpg" />
+
+          <div class="image-overlay-content">
+            <h2> Meet our Staff!</h2>
+            <a href="#" class="button">Go</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="small-4 columns">
+
+        <div class="image-wrapper overlay-fade-in-new-background">
+
+          <img src="https://i.ytimg.com/vi/N2qYBWqsjtM/maxresdefault.jpg" />
+
+          <div class="image-overlay-content">
+            <h2>More Blizzard Games</h2>
+            <a href="#" class="button">Explore</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="small-12 columns">
+          <p class="slogan">Finger-lickin' good</p>
+          <p class="links">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+            <a href="#">Faq</a>
+            <a href="#">Contact</a>
+          </p>
+          <p class="copywrite">Copywrite not copypwrite © 2015</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
