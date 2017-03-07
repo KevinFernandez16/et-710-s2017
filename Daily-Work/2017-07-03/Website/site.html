@@ -12,18 +12,54 @@
     <link rel="stylesheet" href="css/footer.css">
   </head>
   <body>
-    <!-- Begin nav -->
-    <header class="header">
-      <h1 class="headline"> New and Popular Games <small> </small></h1>
-      <ul class="header-subnav">
-        <li><a href="#">Take Action!</a></li>
-        <li><a href="#" class="is-active">PS4</a></li>
-        <li><a target="_blank" href="http://zurb.com/responsive">Just do it!</a></li>
-      </ul>
-    </header>
-    <!-- End nav -->
+    <!-- Begin nav-->
+    <!-- Small Navigation -->
+    <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+      <a class="logo-small show-for-small-only" href="#"><img src="http://placehold.it/50x50?text=LOGO" /></a>
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
 
-    <!-- Begin hero -->
+    <!-- Medium-Up Navigation -->
+    <nav class="top-bar" id="nav-menu">
+
+      <div class="logo-wrapper hide-for-small-only">
+        <div class="logo">
+          <img src="http://placehold.it/350x150?text=LOGO">
+        </div>
+      </div>
+
+      <!-- Left Nav Section -->
+      <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu">
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Nav Section -->
+      <div class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+          <li class="has-submenu">
+            <a href="#">Menu 4</a>
+            <ul class="submenu menu vertical medium-horizontal" data-submenu>
+              <li><a href="#">First link in dropdown</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Menu 5</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">First link in dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- End nav-->
+
+    <!-- Begin hero-->
     <div class="row collapse expanded">
       <div class="small-12 medium-12 large-12 columns">
         <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
@@ -32,7 +68,7 @@
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             <li class="is-active orbit-slide">
               <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-              <span class="orbit-caption"><p>Overwatch has won Best Game of the Year and Best Action Game of the year at the 2017 DICE awards</p></span>
+              <span class="orbit-caption"><p>Vertical aligning of text over image on Orbit Slider</p></span>
             </li>
             <li class="orbit-slide">
               <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
@@ -53,19 +89,19 @@
       </div>
     </div>
 
-    <!-- End hero -->
+    <!-- End hero-->
 
-    <!-- Begin content -->
+    <!-- Begin content-->
     <div class="row">
       <div class="small-4 columns">
 
         <div class="image-wrapper overlay-fade-in">
 
-          <img src="https://overwatch-a.akamaihd.net/img/pages/home/box-art/en-us/overwatch-pc-tablet-bfc4f6123a0273e9d798e6a202bbca5674c6037b4fe8487997316ba0e1d77eaa85b7b3cdbc9c3ac021e3399fcb6798f606a40797f13ff7b7f090a48383a5b57c.png" />
+          <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
 
           <div class="image-overlay-content">
-            <h2> Buy Overwatch Now!!</h2>
-            <p class="price">$49.99</p>
+            <h2>.overlay-fade-in</h2>
+            <p class="price">$99.99</p>
             <a href="#" class="button">Get it</a>
           </div>
 
@@ -76,12 +112,12 @@
 
         <div class="image-wrapper overlay-slide-in-left">
 
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/For_Honor_cover_art.jpg/250px-For_Honor_cover_art.jpg" />
+          <img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
 
           <div class="image-overlay-content">
-            <h2>Buy For Honor Now!!</h2>
-            <p class="price">$59.99</p>
-            <a href="#" class="button">Get It Now</a>
+            <h2>.overlay-slide-in-left</h2>
+            <p class="price">$2319.99</p>
+            <a href="#" class="button">Buy Me</a>
           </div>
 
         </div>
@@ -91,12 +127,12 @@
 
         <div class="image-wrapper overlay-fade-in-new-background">
 
-          <img src="https://media.playstation.com/is/image/SCEA/playstation-4-slim-vertical-product-shot-01-us-07sep16?$TwoColumn_Image$" />
+          <img src="https://tourneau.scene7.com/is/image/tourneau/FRK0100001?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
 
           <div class="image-overlay-content">
-            <h2>Buy the Playstation 4 Today!!!</h2>
-            <p class="price">$299.99</p>
-            <a href="#" class="button">Get It Now</a>
+            <h2>.overlay-fade-in-new-background</h2>
+            <p class="price">$189,000</p>
+            <a href="#" class="button">Want!</a>
           </div>
 
         </div>
@@ -104,45 +140,14 @@
       </div>
 
     </div>
-    <!-- End content -->
+    <!-- End content-->
 
-    <!-- Begin footer -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-
-    <header class="hero">
-      <h1></h1>
-      <h2 class="subheader"></h2>
-    </header>
+    <!-- Begin footer-->
     <footer class="footer">
       <div class="row">
-        <div class="small-12 medium-6 medium-push-6 columns">
-          <p class="logo show-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p>
-          <form class="footer-form">
-            <div class="row">
-              <div class="medium-9 medium-push-3 columns">
-                <label>
-                  <label for="email" class="contact">Contact Us</label>
-                  <input type="email" id="email" placeholder="Email Address" />
-                </label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-9 medium-push-3 columns">
-                <label>
-                  <textarea rows="5" id="message" placeholder="Message"></textarea>
-                </label>
-              </div>
-              <div class="row">
-                <div class="medium-9 medium-push-3 columns">
-                  <button class="submit" type="submit" value="Submit">Send</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="small-12 medium-6 medium-pull-6 columns">
-          <p class="logo hide-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p>
-          <p class="footer-links">
+        <div class="small-12 columns">
+          <p class="slogan">Finger-lickin' good</p>
+          <p class="links">
             <a href="#">Home</a>
             <a href="#">Blog</a>
             <a href="#">Pricing</a>
@@ -150,17 +155,11 @@
             <a href="#">Faq</a>
             <a href="#">Contact</a>
           </p>
-          <ul class="inline-list social">
-            <a href="#"><i class="fi-social-facebook"></i></a>
-            <a href="#"><i class="fi-social-twitter"></i></a>
-            <a href="#"><i class="fi-social-linkedin"></i></a>
-            <a href="#"><i class="fi-social-github"></i></a>
-          </ul>
-          <p class="copywrite">Copywrite not copywrite © 2015</p>
+          <p class="copywrite">Copywrite not copypwrite © 2015</p>
         </div>
       </div>
     </footer>
-    <!-- End footer -->
+    <!-- End footer-->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
